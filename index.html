@@ -94,7 +94,7 @@ let chart;
 let datos = [];
 
 async function obtenerDatos() {
-    const res = await fetch("http://127.0.0.1:5000/data");
+    const res = await fetch("http://107.21.193.59/data")
     const data = await res.json();
 
     document.getElementById("total").innerText = data.total;

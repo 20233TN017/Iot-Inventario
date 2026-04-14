@@ -3,6 +3,9 @@ from flask_cors import CORS
 import serial
 import threading
 import time
+import requests
+
+requests.post("http://107.21.193.59/add")
 
 app = Flask(__name__)
 CORS(app)
